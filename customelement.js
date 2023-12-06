@@ -6,10 +6,11 @@ class FooterElement extends HTMLElement{
 
 customElements.define("x-footeryear",FooterElement);
 
-class FooterElement extends HTMLElement{
+class BlueElement extends HTMLElement{
     connectedCallback(){
-        this.innerHTML = new Date().getFullYear();
+        this.innerHTML =`<div style="color:#66ADFF">${this.innerHTML}</div>
+        `;
     }
 }
 
-customElements.define("x-footeryear",FooterElement);
+customElements.define("x-blue", BlueElement);
