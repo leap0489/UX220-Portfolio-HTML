@@ -6,11 +6,3 @@ class FooterElement extends HTMLElement{
 
 customElements.define("x-footeryear",FooterElement);
 
-class BlueElement extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML =`<div style="color:#66ADFF">${this.innerHTML}</div>
-        `;
-    }
-}
-
-customElements.define("x-blue", BlueElement);
